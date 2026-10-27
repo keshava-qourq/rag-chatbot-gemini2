@@ -5,7 +5,7 @@
 <!-- sdlc:auto:start overview -->
 RAG chatbot with history and session ID use gemini-2.5-flash for answers and gemini-embedding-001 for embeddings
 
-**Documentation version:** v3
+**Documentation version:** v4
 <!-- sdlc:auto:end overview -->
 
 ## Contents
@@ -17,7 +17,7 @@ RAG chatbot with history and session ID use gemini-2.5-flash for answers and gem
 | [Architecture](architecture/README.md) | 15 entries |
 | [Development](development/README.md) | 6 entries |
 | [Testing](testing/README.md) | 0 entries |
-| [Deployment](deployment/README.md) | 0 entries |
+| [Deployment](deployment/README.md) | 1 entry |
 | [Maintenance](maintenance/README.md) | 0 entries |
 | [Data model](architecture/data-model.md) | generated |
 | [API (OpenAPI)](architecture/api/openapi.yaml) | generated |
@@ -27,11 +27,11 @@ RAG chatbot with history and session ID use gemini-2.5-flash for answers and gem
 | [API reference](development/api-reference.md) | 1 route |
 | [Test report](testing/test-report.md) | not run yet |
 | [Tests](testing/test-cases.md) | 0 tests |
-| [Deployment guide](deployment/deployment-guide.md) | not deployed yet |
-| [Runbook](deployment/runbook.md) | not deployed yet |
-| [Release notes](deployment/release-notes.md) | 0 releases |
+| [Deployment guide](deployment/deployment-guide.md) | deployed |
+| [Runbook](deployment/runbook.md) | deployed |
+| [Release notes](deployment/release-notes.md) | 1 release |
 | [Traceability matrix](traceability-matrix.md) | 19 requirements |
-| [Changelog](CHANGELOG.md) | 3 versions |
+| [Changelog](CHANGELOG.md) | 4 versions |
 <!-- sdlc:auto:end contents -->
 
 ## Open gaps
@@ -56,4 +56,14 @@ RAG chatbot with history and session ID use gemini-2.5-flash for answers and gem
 - No completion/build status reported -- cannot confirm upload, queuing, parsing, chunking, embedding, indexing, or status-view are implemented.
 - No completion/build status reported -- cannot confirm login, document listing, document removal, or history clearing are implemented.
 - No completion/build/verification status reported for Gemini configuration, free-to-use validation, or scale testing -- these are QA-owned items with no test results provided yet.
+
+### Deployment
+
+- No deployment date/timestamp provided for this release.
+- No record of who approved or executed the deployment.
+- No environment label given (e.g. production vs. staging) -- status is only 'live'.
+- No linkage provided between this deployment and the requirement IDs (US-001..US-019) it is intended to satisfy; cannot populate related_ids without that mapping.
+- No confirmation that a testing phase preceded this deployment -- testing phase input was not supplied.
+- Backend URL path includes an app-specific segment (/apps/c60802045d88/); no documentation of routing/proxy setup or whether this is expected to change on future releases.
+- No rollback plan or previous-version reference provided in case this deployment needs to be reverted.
 <!-- sdlc:auto:end open-gaps -->
